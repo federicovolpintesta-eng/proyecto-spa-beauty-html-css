@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #264065;
+  background-color: #FAF8F5;
+}
+
+a {
+  color: #264065;
+  text-decoration: none;
+}
+
+/* ================= SECCIÓN PRINCIPAL ================= */
+.container__services {
+  height: 85vh;
+  background: linear-gradient(to right, #FAF8F5 58%, #A9D6CB 58%);
+  padding: 0 120px;
+  position: relative;
+}
+
+/* ================= HEADER ================= */
+header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.header__logo img {
+  display: block;
+}
+
+/* Navegación */
+.nav-primary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 60px;
+}
+
+.nav-primary ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-primary a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+div.dropdown button{
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #264065;
+}
+
+/* Íconos */
+.iconos {
+  display: flex;
+  gap: 16px;
+}
+
+/* Login */
+.header__login ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__login .btn {
+  background-color: #264065;
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 80px;
+  position: relative;
+}
+
+/* Contenido */
+.hero__content {
+  width: 52%;
+  z-index: 3;
+}
+
+.hero__content h1 {
+  letter-spacing: -1px;
+  font-size: 50px;
+  line-height: 70px;
+  margin-bottom: 28px;
+  width: 600px;
+}
+
+.hero__description {
+  font-size: 18px;
+  color: #909090;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+/* ================= BOTONES ================= */
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 90px;
+}
+
+div.iconos{
+  margin-left: 250px;
+}
+
+.buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.buttons button a {
+  background-color: #264065;
+  color: #fff;
+  padding: 14px 38px;
+  border-radius: 28px;
+  font-size: 15px;
+}
+
+.btn__watch {
+  background: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn__watch img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #C5D6E5;
+  padding: 0px;
+}
+
+.buttons p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ================= MÉTRICAS ================= */
+.hero__services {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.hero__services div {
+  text-align: center;
+}
+
+.hero__services img {
+  margin-bottom: 10px;
+}
+
+.hero__services h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.hero__services p {
+  font-size: 14px;
+  color: #949494;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+/* ================= IMAGEN ================= */
+.hero__img img {
+  position: absolute;
+  right: 40px;
+  bottom: 0px;
+  width: 1100px;
+  z-index: 3;
+}
+
+img.vector{
+  position: absolute;
+  opacity: 0.04;
+  left: 749px;
+  bottom: 370px;
+  z-index: -2;
+  width: 400px;
+}
+
+/* ================= TESTIMONIOS ================= */
+.coments article {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  width: 380px;
+  border-radius: 16px;
+  position: absolute;
+  right: 67px;
+  top: 315px;
+  z-index: 4;
+}
+
+.coments article img {
+  margin-bottom: 10px;
+}
+
+.coments article p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Segundo comentario */
+.coments article.opacity {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 360px;
+  right: 250px;
+  top: 600px;
+  z-index: 3;
+}
