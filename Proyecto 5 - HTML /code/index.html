@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Tarea entregable 5 - Hotel Andina</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-top">
+    <p>📍 Bariloche, Argentina</p>
+    <p>📞 +54 11 4444 3333</p>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <h1>HOTEL ANDINA</h1>
+      <span>Boutique Resort</span>
+    </div>
+
+    <!-- MENÚ MOBILE -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="menu">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#rooms">Habitaciones</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#gallery">Galería</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li class="btn"><a href="#">Reservar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <img src="img/hero.jpg" alt="Hero">
+  <div class="hero-content">
+    <h2>Descubrí la experiencia Andina</h2>
+    <p>Confort, naturaleza y diseño en la Patagonia</p>
+    <a href="#" class="cta">Reservar ahora</a>
+  </div>
+</section>
+
+<!-- ================= ROOMS ================= -->
+<section class="rooms" id="rooms">
+  <h2>Nuestras Habitaciones</h2>
+
+  <div class="rooms-grid">
+    <article class="room-card">
+      <img src="img/standar.jpg" alt="Habitación Standard">
+      <h3>Standard</h3>
+      <p>Confort y calidez para estadías cortas.</p>
+      <span>Desde USD 90</span>
+    </article>
+
+    <article class="room-card">
+      <img src="img/deluxe.jpg" alt="Habitación Deluxe">
+      <h3>Deluxe</h3>
+      <p>Amplia, con vista a la montaña.</p>
+      <span>Desde USD 140</span>
+    </article>
+
+    <article class="room-card">
+      <img src="img/suite.jpg" alt="Suite">
+      <h3>Suite</h3>
+      <p>Experiencia premium con jacuzzi.</p>
+      <span>Desde USD 220</span>
+    </article>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <h2>Servicios</h2>
+
+  <div class="services-grid">
+    <div class="service">🏔 Excursiones</div>
+    <div class="service">🔥 Spa & Sauna</div>
+    <div class="service">🍽 Restaurante</div>
+    <div class="service">🚗 Estacionamiento</div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<!-- ================= GALLERY / CARRUSEL ================= -->
+<section class="gallery" id="gallery">
+  <h2>Galería</h2>
+
+  <div class="carousel">
+
+    <!-- Inputs -->
+    <input type="radio" name="slides" id="slide1" checked>
+    <input type="radio" name="slides" id="slide2">
+    <input type="radio" name="slides" id="slide3">
+    <input type="radio" name="slides" id="slide4">
+
+    <!-- Slides -->
+    <div class="slides">
+      <div class="slide">
+        <img src="img/riu.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/hotel.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/lobby-hotel.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/breakfast.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- Flechas -->
+    <div class="arrows">
+      <label for="slide4" class="arrow prev prev1">❮</label>
+      <label for="slide2" class="arrow next next1">❯</label>
+
+      <label for="slide1" class="arrow prev prev2">❮</label>
+      <label for="slide3" class="arrow next next2">❯</label>
+
+      <label for="slide2" class="arrow prev prev3">❮</label>
+      <label for="slide4" class="arrow next next3">❯</label>
+
+      <label for="slide3" class="arrow prev prev4">❮</label>
+      <label for="slide1" class="arrow next next4">❯</label>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <h2>Contacto</h2>
+
+  <div class="contact-container">
+
+    <!-- Formulario -->
+    <form class="contact-form">
+      <h3>Escribinos</h3>
+
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- Información -->
+    <div class="contact-info">
+      <h3>Hotel Andina</h3>
+      <p><strong>Dirección:</strong> Ruta 40 Km 2100, Bariloche</p>
+      <p><strong>Email:</strong> contacto@hotelandina.com</p>
+      <p><strong>Teléfono:</strong> +54 11 4444 3333</p>
+
+      <div class="contact-divider"></div>
+
+      <p>Boutique Resort ubicado en la Patagonia Argentina, rodeado de naturaleza y confort.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Hotel Andina</h3>
+    <p>Boutique Resort · Bariloche, Argentina</p>
+    <p>📧 contacto@hotelandina.com | 📞 +54 11 4444 3333</p>
+    <small>© 2026 Hotel Andina - Trabajo Práctico Desarrollo Web</small>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #2B2D38;
+  --pink-color: #DB2A6B;
+  --grey-nav: #ABABAB;
+  --grey-text: #95969B;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 130px;
+  padding-right: 100px;
+}
+
+body {
+  margin-left:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.container {
+  font-family: 'Merriweather', serif;
+  background-color: var(--primary-color);
+  height: 115vh;
+}
+
+header nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-top: 37px;}
+
+.navbar ul li.home::before {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background: var(--pink-color);
+  position: absolute;
+  margin-top: 30px;
+}
+
+header nav.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-right: 70px;
+}
+
+header nav.navbar ul li a {
+  text-decoration: none;
+  color: var(--grey-nav);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+header nav.navbar ul li.home {
+  color: #FFFFFF;
+}
+
+section.hero {
+  color: #FFFFFF;
+  width: 50%;
+}
+
+section.hero h1 {
+  font-size: 80px;
+  font-weight: 450;
+  line-height: 100px;
+  margin-bottom: 20px;
+  font-family: Merriweather, serif;
+}
+
+section.hero p {
+  font-size: 24px;
+  color: var(--grey-text);
+  margin-bottom: 40px;
+  line-height: 30px;
+  width: 680px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 32px;
+}
+  section button.get {
+  background-color: var(--pink-color);
+  color: #FFFFFF;
+  border-radius: 16px 16px 16px 0px;
+  padding: 15px 60px;
+  font-size: 20px;
+  margin-right: 20px;
+  border: none;
+}
+
+  section button {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  text-decoration: underline
+}
+
+section.hero img {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 15px;
+
+}
+
+section.hero-img {
+  width: 600px;
+  height: 850px;
+  display: flex;
+  position: relative;
+  left: 700px;
+  bottom:550px; 
+}
+
+div.services {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  height: 100px;
+  position: relative;
+  bottom: 720px;
+  gap: 5px;
+
+}
+
+div.services a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 14px;
+  width: 100px;
+  height: 100px;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  align-content: center;
+
+}
+
+div.services img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  position: relative;
+  top: 15px;
+}
+
+div.content__calendar {
+width: 126px;
+display: flex;
+}
