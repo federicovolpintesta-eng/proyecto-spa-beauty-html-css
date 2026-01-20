@@ -17,11 +17,11 @@ body {
   margin-left:0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--primary-color);
 }
 
 div.container {
   font-family: 'Merriweather', serif;
-  background-color: var(--primary-color);
   height: 115vh;
 }
 
@@ -53,7 +53,7 @@ header nav.navbar ul li a {
   color: var(--grey-nav);
   font-weight: 500;
   font-size: 16px;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header nav.navbar ul li.home {
@@ -66,24 +66,24 @@ section.hero {
 }
 
 section.hero h1 {
-  font-size: 80px;
-  font-weight: 450;
-  line-height: 100px;
+  font-size: 75px;
+  line-height: 90px;
   margin-bottom: 20px;
-  font-family: Merriweather, serif;
+  font-family: "Merriweather", serif;
 }
 
 section.hero p {
-  font-size: 24px;
+  font-size: 21px;
   color: var(--grey-text);
   margin-bottom: 40px;
   line-height: 30px;
-  width: 680px;
+  width: 558px;
   height: auto;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 32px;
 }
-  section button.get {
+
+section button.get {
   background-color: var(--pink-color);
   color: #FFFFFF;
   border-radius: 16px 16px 16px 0px;
@@ -93,31 +93,28 @@ section.hero p {
   border: none;
 }
 
-  section button {
+section button {
   background-color: transparent;
   color: #FFFFFF;
   border: none;
   font-size: 20px;
-  text-decoration: underline
+  text-decoration: underline;
+  letter-spacing: 1;
 }
 
-section.hero img {
-  padding: 0;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 15px;
-
+section button a{
+  text-decoration: none;
+  color:white;
 }
+
 
 section.hero-img {
-  width: 600px;
-  height: 850px;
+  max-width: 755px;
+  height: 750px;
   display: flex;
   position: relative;
   left: 700px;
-  bottom:550px; 
+  bottom: 506px;
 }
 
 div.services {
